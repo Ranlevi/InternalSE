@@ -1,4 +1,8 @@
 import xml.etree.cElementTree as ET
+from whoosh.fields import Schema, TEXT, KEYWORD
+from whoosh.index import create_in
+
+import pdb
 
 def parse_xmls(path_to_xmls):
     #get all the questions from the file. create a dict of posts.
@@ -70,20 +74,66 @@ def parse_xmls(path_to_xmls):
 
     return questions
 
+def create_schema(path_to_index_folder, db_name):
+
+    db_docs_schema = Schema(doc_texts   = TEXT(),
+                            doc_tags    = KEYWORD(commas = True, scorable = True),
+                            question_id = TEXT(stored = True))
+
+    db_docs_ix_pointer = create_in(path_to_index_folder, 
+                                   schema    = db_docs_schema, 
+                                   indexname = db_name + '_index')
+    return db_docs_ix_pointer
+
+def index_data(db_docs_ix_pointer, db_name, data):
+
+    doc_writer = db_docs_ix_pointer.writer(limitmb = 512, procs = 4)
+
+    num_of_docs = len(data.keys())
+    i = 0
+
+    for qid in data.keys():
+
+        i+=1
+        if (i%100 == 0):
+            print ("Indexed doc {0} out of {1}".format(i,num_of_docs))
+
+        tmp_text = ''
+        tmp_text += data[qid]['Title'] + ''
+        tmp_text += data[qid]['Body'] + ''
+
+        tmp_text += ' '.join([comment['Text'] for comment in data[qid]['Comments']]) + ' '
+        tmp_text += ' '.join([answer['Body'] for answer in data[qid]['Answers']]) + ' '
+
+        for answer in data[qid]['Answers']:
+            tmp_text += ' '.join([ans_comment['Text'] for ans_comment in answer['Comments']]) + ' '
+
+        tmp_tags = data[qid]['Tags']
+        l = tmp_tags.split("><")
+        fixed_tags = [tag.replace("<", "").replace(">","") for tag in l]
+        fixed_tags = unicode(",".join(fixed_tags))
+
+        doc_writer.add_document(doc_texts = unicode(tmp_text),
+                                    doc_tags  = fixed_tags,
+                                    question_id = unicode(qid))
+    
+    doc_writer.commit()
+    return 
+
+         
 
 #we now have a dict of questions with their answers and all.
-
-#import pdb
-#pdb.set_trace()
-#
-#import pprint 
-#pprint.pprint(questions['22'])
-#pprint.pprint(answers['13'])
-#pprint.pprint(users['13'])
-
 if __name__ == "__main__":
 
-    questions = parse_xmls('../Datadumps/Beer/')
-    import pprint 
-    pprint.pprint(questions['22'])
+    #data = parse_xmls('../Datadumps/Beer/')
+    data = parse_xmls('../Datadumps/CodeReview/')
+    #import pprint 
+    #pprint.pprint(questions['22'])
     #
+    #questions = parse_xmls('../Datadumps/CodeReview/')
+    #pprint.pprint(questions['22'])
+
+    #db_docs_ix_pointer = create_schema('../Index', 'Beer')
+    #index_data(db_docs_ix_pointer, 'Beer', data)
+    db_docs_ix_pointer = create_schema('../Index', 'CodeReview')
+    index_data(db_docs_ix_pointer, 'CodeReview', data)
