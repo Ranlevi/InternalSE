@@ -33,10 +33,15 @@
 	</div>
 	<div id="contents">
 		<div id="tagline" class="clearfix">
-			<h1>Design With Simplicity.</h1>
+			<h1>Welcome. Select a Stack Exchange site:</h1>
 			<div>
 				<p>
-					You can replace all this text with your own text. Want an easier solution for a Free Website?
+                    (Sort by <a href="/?sort_type=name">Name</a>/<a href="/?sort_type=size">Size</a>)
+                  <ul>
+                    % for site in s_e_sites:
+                    <li>{{site[0]}} ({{site[1]}})</li>
+                    % end
+                  </ul> 
 				</p>
 			</div>
 		</div>

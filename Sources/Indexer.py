@@ -1,8 +1,9 @@
 import xml.etree.cElementTree as ET
 from whoosh.fields import Schema, TEXT, KEYWORD
 from whoosh.index import create_in
+import shelve, os
 
-import pdb
+#import pdb
 
 def parse_xmls(path_to_xmls):
     #get all the questions from the file. create a dict of posts.
@@ -125,15 +126,29 @@ def index_data(db_docs_ix_pointer, db_name, data):
 #we now have a dict of questions with their answers and all.
 if __name__ == "__main__":
 
-    #data = parse_xmls('../Datadumps/Beer/')
-    data = parse_xmls('../Datadumps/CodeReview/')
+    path_to_datadumps = '../Datadumps/'
+    datadumps = os.listdir(path_to_datadumps)
+ 
+    #create a shelv
+    metadata_shelve = shelve.open('../Metadata/metadata.db', protocol = -1)
+    
+    for datadump in datadumps:
+
+        data = parse_xmls(path_to_datadumps + datadump + '/')
+        db_docs_ix_pointer = create_schema('../Index', datadump)
+        index_data(db_docs_ix_pointer, datadump, data)
+
+        metadata_shelve[datadump] = len(data.keys())
+
+    metadata_shelve.close()
+    
+
     #import pprint 
     #pprint.pprint(questions['22'])
     #
     #questions = parse_xmls('../Datadumps/CodeReview/')
     #pprint.pprint(questions['22'])
 
-    #db_docs_ix_pointer = create_schema('../Index', 'Beer')
-    #index_data(db_docs_ix_pointer, 'Beer', data)
-    db_docs_ix_pointer = create_schema('../Index', 'CodeReview')
-    index_data(db_docs_ix_pointer, 'CodeReview', data)
+    #data = parse_xmls('../Datadumps/CodeReview/')
+    #db_docs_ix_pointer = create_schema('../Index', 'CodeReview')
+    #index_data(db_docs_ix_pointer, 'CodeReview', data)

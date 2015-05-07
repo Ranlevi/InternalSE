@@ -1,15 +1,15 @@
 /* Website template by freewebsitetemplates.com */
 @font-face {
 	font-family: 'OpenSans';
-	src: url('../fonts/OpenSans-Regular.eot');
-	src: local('☺'), url('../fonts/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans-Regular.svg') format('svg');
+	src: url('../static/fonts/OpenSans-Regular.eot');
+	src: local('☺'), url('../static/fonts/OpenSans-Regular.woff') format('woff'), url('../static/fonts/OpenSans-Regular.ttf') format('truetype'), url('../static/fonts/OpenSans-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Play';
-	src: url('../fonts/Play-Regular.eot');
-	src: local('☺'), url('../fonts/Play-Regular.woff') format('woff'), url('../fonts/Play-Regular.ttf') format('truetype'), url('../fonts/Play-Regular.svg') format('svg');
+	src: url('../static/fonts/Play-Regular.eot');
+	src: local('☺'), url('../static/fonts/Play-Regular.woff') format('woff'), url('../static/fonts/Play-Regular.ttf') format('truetype'), url('../static/fonts/Play-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -30,7 +30,7 @@ img {
 	visibility:hidden;
 }
 .btn {
-	background: url(../images/bg-button.png) no-repeat;
+	background: url(../static/images/bg-button.png) no-repeat;
 	background-position: 0 -70px;
 	color: #fff;
 	display: inline-block;
@@ -61,7 +61,7 @@ img {
 	margin-right: 20px;
 }
 #header .logo a {
-	background: url(../images/logo.png) no-repeat center top;
+	background: url(../static/images/logo.png) no-repeat center top;
 	color: #000;
 	display: block;
 	font: 15px/30px 'Play';
@@ -191,7 +191,7 @@ p a {
 /** main **/
 .main {
 	float: left;
-	background: url(../images/divider.png) repeat-y right top;
+	background: url(../static/images/divider.png) repeat-y right top;
 	min-height: 100px;
 	width: 620px;
 	padding-right: 24px;
