@@ -102,49 +102,6 @@ img {
 #navigation li.active a {
 	color: #f99600;
 }
-#adbox {
-	background: url(../images/bg-adbox.jpg) repeat-x left top;
-	height: 380px;
-	padding: 60px 0;
-}
-#adbox > div {
-	width: 800px;
-	margin: 0 auto;
-	padding: 0 80px;
-}
-#adbox > div img {
-	float: right;
-	margin-left: 60px;
-}
-#adbox h1, #adbox h2 {
-	color: #2c2c2c;
-	font-size: 60px;
-	line-height: 60px;
-	margin: 0;
-	text-transform: uppercase;
-}
-#adbox h2 {
-	font-size: 30px;
-	line-height: 36px;
-	text-transform: none;
-}
-#adbox p {
-	font-size: 16px;
-	line-height: 24px;
-	margin: 0;
-}
-#adbox p span {
-	display: block;
-	font-size: 12px;
-	width: 360px;
-	padding: 24px 0;
-	text-align: center;
-}
-#adbox p span b {
-	font-weight: normal;
-	display: block;
-	width: 256px;
-}
 /*------------------------------ CONTENTS ------------------------------*/
 #contents {
 	min-height: 510px;
@@ -367,37 +324,4 @@ p a {
 	font-size: 12px;
 	line-height: 30px;
 	padding-left: 10px;
-}
-#connect {
-	float: right;
-	display: inline-block;
-	margin-right: 30px;
-}
-#connect a {
-	background: url(../images/icons.png) no-repeat;
-	display: inline-block;
-	height: 30px;
-	width: 30px;
-	margin: 0 10px;
-}
-#connect a.googleplus {
-	background-position: 0 -40px;
-}
-#connect a.twitter {
-	background-position: 0 -80px;
-}
-#connect a.tumbler {
-	background-position: 0 -120px;
-}
-#connect a.facebook:hover {
-	background-position: -40px 0;
-}
-#connect a.googleplus:hover {
-	background-position: -40px -40px;
-}
-#connect a.twitter:hover {
-	background-position: -40px -80px;
-}
-#connect a.tumbler:hover {
-	background-position: -40px -120px;
 }
