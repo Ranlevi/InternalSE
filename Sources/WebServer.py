@@ -14,11 +14,31 @@ import cPickle
           make the indexer a standalone app, for someone to build a front end. 
 """
 @route('/')
+@route('/index')
 def index():
     sort_type = request.query.sort_type or 'name'
     sorted_s_e_sites_list = sort_by_name_of_size(s_e_sites, sort_type)
    
     return template('index', s_e_sites = sorted_s_e_sites_list)
+
+@route('/help')
+def help():
+    return template('help')
+
+@route('/news')
+def news():
+    return template('news')
+
+@route('/about')
+def about():
+    return template('about')
+
+@route('/contact')
+def contanct():
+    return template('contact')
+
+
+
 
 @route('/site')
 def site():
@@ -42,11 +62,20 @@ def search():
     
     return template('search_results', tag_name = tag, search_results = search_results)
 
+@route('/display_full_doc')
+def display_full_doc():
+
+    doc_id = request.query.doc_id
+    doc_data = current_site.data[doc_id]
+    return template('full_doc', doc_data = doc_data)
+
+###################################################
 #get all the static files (css, images, fonts..)
 @route('/static/<filename:path>')
 def server_static(filename):
     return static_file(filename, root = 'static')
 
+###################################################
 def sort_by_name_of_size(list_to_be_sorted, sort_type):
     sorted_list = []
     if sort_type == 'name':
@@ -55,7 +84,9 @@ def sort_by_name_of_size(list_to_be_sorted, sort_type):
         sorted_list = sorted(list_to_be_sorted, key = lambda x: x[1], reverse = True)
 
     return sorted_list
+
         
+###################################################
 class CurrentSite(object):
     
     def __init__(self, site_name):

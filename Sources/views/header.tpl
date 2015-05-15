@@ -10,23 +10,23 @@
 	<div id="header">
 		<div>
 			<div class="logo">
-				<a href="index.html">Internal S.E</a>
+				<a href="/index">Internal S.E</a>
 			</div>
 			<ul id="navigation">
 				<li class="active">
-					<a href="index.html">Home</a>
+					<a href="/index">Home</a>
 				</li>
 				<li>
-					<a href="help.html">Help</a>
+					<a href="/help">Help</a>
 				</li>
 				<li>
-					<a href="news.html">News</a>
+					<a href="/news">News</a>
 				</li>
 				<li>
-					<a href="about.html">About</a>
+					<a href="/about">About</a>
 				</li>
 				<li>
-					<a href="contact.html">Contact</a>
+					<a href="/contact">Contact</a>
 				</li>
 			</ul>
 		</div>

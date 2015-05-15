@@ -20,6 +20,15 @@ def parse_xmls(path_to_xmls):
                'Answers': list of answers}
     """
 
+    #Create a users dict, where the id is the key.
+    users_root = ET.iterparse(path_to_xmls + 'Users.xml')
+    
+    users = {}
+    for (event, user) in users_root:
+        if user.tag=='row':
+            users[user.attrib['Id']] = user.attrib
+
+######### 
     #get all the questions from the file. create a dict of posts.
     posts_root = ET.iterparse(path_to_xmls + 'Posts.xml')
     
@@ -28,6 +37,12 @@ def parse_xmls(path_to_xmls):
         if post.tag == 'row' and (post.attrib['PostTypeId']=='1'):#A question
             questions[post.attrib['Id']] = post.attrib
             questions[post.attrib['Id']].update({'Comments': [], 'PostLinks': [], 'Answers': []})
+
+            try:
+                user_id = post.attrib['OwnerUserId']
+                questions[post.attrib['Id']].update({'User': users[user_id]})
+            except KeyError:
+                questions[post.attrib['Id']].update({'User': None})
     
     #get all the answers from the file. create a new dict: keys are post_id, value is post
     answers_root = ET.iterparse(path_to_xmls + 'Posts.xml')
@@ -38,6 +53,12 @@ def parse_xmls(path_to_xmls):
     
             answers[post.attrib['Id']] = post.attrib
             answers[post.attrib['Id']].update({'Comments': [], 'PostLinks': []})
+
+            try:
+                user_id = post.attrib['OwnerUserId']
+                answers[post.attrib['Id']].update({'User': users[user_id]})
+            except KeyError:
+                answers[post.attrib['Id']].update({'User': None})
     
     #get all the comments from the file. 
     #for each comment, find the PostId it belongs to.
@@ -47,21 +68,28 @@ def parse_xmls(path_to_xmls):
     
     for (event, comment) in comments_root:
         if comment.tag=='row':
-    
+   
             post_id = comment.attrib['PostId']
+            comment_dict = comment.attrib
+
+            try:
+                user_id = comment.attrib['UserId']
+                comment_dict.update({'User': users[user_id]})
+            except KeyError:
+                comment_dict.update({'User': None})
     
             if post_id in questions:
-                questions[post_id]['Comments'].append(comment.attrib)
+                questions[post_id]['Comments'].append(comment_dict)
             elif post_id in answers:
-                answers[post_id]['Comments'].append(comment.attrib)
+                answers[post_id]['Comments'].append(comment_dict)
                 
-    #Create a users dict, where the id is the key.
-    users_root = ET.iterparse(path_to_xmls + 'Users.xml')
-    
-    users = {}
-    for (event, user) in users_root:
-        if user.tag=='row':
-            users[user.attrib['Id']] = user.attrib
+#    #Create a users dict, where the id is the key.
+#    users_root = ET.iterparse(path_to_xmls + 'Users.xml')
+#    
+#    users = {}
+#    for (event, user) in users_root:
+#        if user.tag=='row':
+#            users[user.attrib['Id']] = user.attrib
             
     #get all the post_links
     #for each one, try to find the post in the questions and in the answers

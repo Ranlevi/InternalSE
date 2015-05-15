@@ -2,6 +2,7 @@ from whoosh.index import open_dir
 from whoosh.qparser import QueryParser
 import os
 
+########################################################
 def get_all_index_pointers(path_to_index_folder, db_names):
     index_pointers = {}
     for name in db_names:
@@ -10,6 +11,7 @@ def get_all_index_pointers(path_to_index_folder, db_names):
 
     return index_pointers
 
+########################################################
 def get_search_results(index_pointer, tag, page_number, data):
 
     matched_docs_ids = []
