@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tags>
+  <row Id="1" TagName="inclination" Count="4" ExcerptPostId="553" WikiPostId="552" />
+  <row Id="3" TagName="exoplanet" Count="59" ExcerptPostId="11" WikiPostId="10" />
+  <row Id="4" TagName="atmosphere" Count="31" ExcerptPostId="49" WikiPostId="48" />
+  <row Id="5" TagName="amateur-observing" Count="55" ExcerptPostId="615" WikiPostId="614" />
+  <row Id="6" TagName="binary-star" Count="19" ExcerptPostId="316" WikiPostId="315" />
+  <row Id="9" TagName="black-hole" Count="91" ExcerptPostId="20" WikiPostId="19" />
+  <row Id="10" TagName="light" Count="57" ExcerptPostId="196" WikiPostId="195" />
+  <row Id="11" TagName="coordinate" Count="16" ExcerptPostId="7909" WikiPostId="7908" />
+  <row Id="15" TagName="weather" Count="5" ExcerptPostId="294" WikiPostId="293" />
+  <row Id="16" TagName="moon" Count="125" ExcerptPostId="208" WikiPostId="207" />
+  <row Id="17" TagName="orbit" Count="122" ExcerptPostId="51" WikiPostId="50" />
+  <row Id="18" TagName="venus" Count="18" ExcerptPostId="31" WikiPostId="30" />
+  <row Id="19" TagName="rotation" Count="33" ExcerptPostId="355" WikiPostId="354" />
+  <row Id="20" TagName="supermassive-black-hole" Count="25" ExcerptPostId="417" WikiPostId="416" />
+  <row Id="21" TagName="navigation" Count="4" ExcerptPostId="292" WikiPostId="291" />
+  <row Id="22" TagName="uranus" Count="6" ExcerptPostId="177" WikiPostId="176" />
+  <row Id="23" TagName="star" Count="160" ExcerptPostId="85" WikiPostId="84" />
+  <row Id="24" TagName="pulsar" Count="12" ExcerptPostId="210" WikiPostId="209" />
+  <row Id="25" TagName="ascension" Count="6" />
+  <row Id="26" TagName="declination" Count="5" />
+  <row Id="27" TagName="sun" Count="111" ExcerptPostId="204" WikiPostId="203" />
+  <row Id="29" TagName="clock" Count="2" ExcerptPostId="56" WikiPostId="55" />
+  <row Id="30" TagName="constelations" Count="1" ExcerptPostId="551" WikiPostId="550" />
+  <row Id="31" TagName="temperature" Count="19" ExcerptPostId="549" WikiPostId="548" />
+  <row Id="32" TagName="gravity" Count="106" ExcerptPostId="198" WikiPostId="197" />
+  <row Id="33" TagName="neptune" Count="7" ExcerptPostId="179" WikiPostId="178" />
+  <row Id="34" TagName="climate" Count="5" />
+  <row Id="35" TagName="naming" Count="7" ExcerptPostId="83" WikiPostId="82" />
+  <row Id="36" TagName="solar-flare" Count="13" />
+  <row Id="37" TagName="coronal-mass-ejection" Count="3" />
+  <row Id="38" TagName="distances" Count="51" ExcerptPostId="194" WikiPostId="193" />
+  <row Id="39" TagName="parallax" Count="4" ExcerptPostId="735" WikiPostId="734" />
+  <row Id="40" TagName="redshift" Count="25" ExcerptPostId="1418" WikiPostId="1417" />
+  <row Id="41" TagName="parsec" Count="1" ExcerptPostId="380" WikiPostId="379" />
+  <row Id="42" TagName="galaxy" Count="97" ExcerptPostId="200" WikiPostId="199" />
+  <row Id="43" TagName="neutron-star" Count="17" ExcerptPostId="737" WikiPostId="736" />
+  <row Id="44" TagName="laws-of-physics" Count="10" />
+  <row Id="46" TagName="earth-like-planet" Count="19" ExcerptPostId="389" WikiPostId="388" />
+  <row Id="47" TagName="extra-terrestrial" Count="16" />
+  <row Id="49" TagName="observatory" Count="5" ExcerptPostId="206" WikiPostId="205" />
+  <row Id="51" TagName="universe" Count="83" ExcerptPostId="143" WikiPostId="142" />
+  <row Id="52" TagName="expansion" Count="27" ExcerptPostId="739" WikiPostId="738" />
+  <row Id="53" TagName="hot-jupiter" Count="3" ExcerptPostId="405" WikiPostId="404" />
+  <row Id="54" TagName="solar-system" Count="105" ExcerptPostId="202" WikiPostId="201" />
+  <row Id="55" TagName="big-bang-theory" Count="39" ExcerptPostId="6148" WikiPostId="6147" />
+  <row Id="58" TagName="general-relativity" Count="43" ExcerptPostId="320" WikiPostId="319" />
+  <row Id="59" TagName="cosmology" Count="53" ExcerptPostId="318" WikiPostId="317" />
+  <row Id="60" TagName="star-gazing" Count="13" />
+  <row Id="61" TagName="soft-question" Count="6" />
+  <row Id="62" TagName="heat" Count="8" ExcerptPostId="192" WikiPostId="191" />
+  <row Id="63" TagName="titan" Count="6" ExcerptPostId="393" WikiPostId="392" />
+  <row Id="64" TagName="white-hole" Count="4" />
+  <row Id="66" TagName="milky-way" Count="38" ExcerptPostId="186" WikiPostId="185" />
+  <row Id="69" TagName="dobsonian-telescope" Count="6" ExcerptPostId="561" WikiPostId="560" />
+  <row Id="71" TagName="wormhole" Count="3" ExcerptPostId="162" WikiPostId="161" />
+  <row Id="72" TagName="trojan-asteroids" Count="1" ExcerptPostId="397" WikiPostId="396" />
+  <row Id="73" TagName="asteroids" Count="30" ExcerptPostId="188" WikiPostId="187" />
+  <row Id="74" TagName="observation" Count="66" ExcerptPostId="239" WikiPostId="238" />
+  <row Id="75" TagName="triton" Count="1" ExcerptPostId="190" WikiPostId="189" />
+  <row Id="76" TagName="supernova" Count="25" ExcerptPostId="288" WikiPostId="287" />
+  <row Id="77" TagName="callisto" Count="1" ExcerptPostId="184" WikiPostId="183" />
+  <row Id="78" TagName="core" Count="10" ExcerptPostId="570" WikiPostId="569" />
+  <row Id="79" TagName="planets" Count="87" ExcerptPostId="365" WikiPostId="364" />
+  <row Id="80" TagName="classification" Count="7" />
+  <row Id="81" TagName="comets" Count="33" ExcerptPostId="516" WikiPostId="515" />
+  <row Id="82" TagName="meteor" Count="19" ExcerptPostId="566" WikiPostId="565" />
+  <row Id="83" TagName="meteorite" Count="6" />
+  <row Id="85" TagName="stellar-dynamics" Count="7" ExcerptPostId="559" WikiPostId="558" />
+  <row Id="86" TagName="dwarf-planets" Count="8" />
+  <row Id="87" TagName="earth" Count="93" ExcerptPostId="286" WikiPostId="285" />
+  <row Id="89" TagName="horizon" Count="6" />
+  <row Id="90" TagName="solar-eclipse" Count="7" ExcerptPostId="7800" WikiPostId="7799" />
+  <row Id="91" TagName="lunar-eclipse" Count="7" />
+  <row Id="92" TagName="azimuth" Count="4" />
+  <row Id="93" TagName="newtonian-telescope" Count="11" ExcerptPostId="638" WikiPostId="637" />
+  <row Id="94" TagName="oort-cloud" Count="9" ExcerptPostId="6359" WikiPostId="6358" />
+  <row Id="95" TagName="water" Count="11" ExcerptPostId="741" WikiPostId="740" />
+  <row Id="101" TagName="hubble-telescope" Count="8" ExcerptPostId="290" WikiPostId="289" />
+  <row Id="102" TagName="saturn" Count="13" ExcerptPostId="395" WikiPostId="394" />
+  <row Id="103" TagName="jupiter" Count="37" ExcerptPostId="391" WikiPostId="390" />
+  <row Id="104" TagName="planetary-ring" Count="9" ExcerptPostId="8812" WikiPostId="8811" />
+  <row Id="105" TagName="europa" Count="3" ExcerptPostId="378" WikiPostId="377" />
+  <row Id="106" TagName="movement" Count="4" />
+  <row Id="107" TagName="intergalactic-space" Count="8" ExcerptPostId="330" WikiPostId="329" />
+  <row Id="108" TagName="photography" Count="17" ExcerptPostId="619" WikiPostId="618" />
+  <row Id="109" TagName="natural-satellites" Count="12" ExcerptPostId="7911" WikiPostId="7910" />
+  <row Id="110" TagName="matter" Count="10" />
+  <row Id="111" TagName="dark-matter" Count="23" ExcerptPostId="6268" WikiPostId="6267" />
+  <row Id="112" TagName="size" Count="10" ExcerptPostId="342" WikiPostId="341" />
+  <row Id="113" TagName="apparent-magnitude" Count="5" />
+  <row Id="114" TagName="luminosity" Count="5" />
+  <row Id="115" TagName="angular-resolution" Count="6" />
+  <row Id="116" TagName="mars" Count="35" ExcerptPostId="338" WikiPostId="337" />
+  <row Id="121" TagName="formation" Count="21" ExcerptPostId="743" WikiPostId="742" />
+  <row Id="127" TagName="mercury" Count="6" ExcerptPostId="376" WikiPostId="375" />
+  <row Id="128" TagName="density" Count="4" ExcerptPostId="407" WikiPostId="406" />
+  <row Id="132" TagName="hawking-radiation" Count="6" />
+  <row Id="133" TagName="gas-giants" Count="15" />
+  <row Id="134" TagName="space-telescope" Count="9" />
+  <row Id="135" TagName="lagrange-point" Count="6" ExcerptPostId="8191" WikiPostId="8190" />
+  <row Id="136" TagName="space-debris" Count="3" ExcerptPostId="555" WikiPostId="554" />
+  <row Id="140" TagName="habitation-zone" Count="10" ExcerptPostId="467" WikiPostId="466" />
+  <row Id="142" TagName="surface" Count="10" ExcerptPostId="7915" WikiPostId="7914" />
+  <row Id="143" TagName="chthonian" Count="1" ExcerptPostId="403" WikiPostId="402" />
+  <row Id="145" TagName="sombrero-galaxy" Count="2" ExcerptPostId="410" WikiPostId="409" />
+  <row Id="146" TagName="dust" Count="12" />
+  <row Id="147" TagName="pluto" Count="9" ExcerptPostId="518" WikiPostId="517" />
+  <row Id="148" TagName="charon" Count="4" ExcerptPostId="471" WikiPostId="470" />
+  <row Id="149" TagName="explosion" Count="3" ExcerptPostId="568" WikiPostId="567" />
+  <row Id="152" TagName="kuiper-belt" Count="7" ExcerptPostId="563" WikiPostId="562" />
+  <row Id="153" TagName="terrestrial-planets" Count="5" ExcerptPostId="541" WikiPostId="540" />
+  <row Id="154" TagName="lhb" Count="2" ExcerptPostId="449" WikiPostId="448" />
+  <row Id="155" TagName="space" Count="34" ExcerptPostId="436" WikiPostId="435" />
+  <row Id="157" TagName="volcanism" Count="4" ExcerptPostId="600" WikiPostId="599" />
+  <row Id="158" TagName="light-pollution" Count="7" ExcerptPostId="453" WikiPostId="452" />
+  <row Id="161" TagName="cmb" Count="14" ExcerptPostId="6253" WikiPostId="6252" />
+  <row Id="162" TagName="early-universe" Count="17" ExcerptPostId="792" WikiPostId="791" />
+  <row Id="163" TagName="telescope" Count="77" ExcerptPostId="465" WikiPostId="464" />
+  <row Id="165" TagName="kbo" Count="1" ExcerptPostId="469" WikiPostId="468" />
+  <row Id="166" TagName="rogue-planet" Count="7" ExcerptPostId="7798" WikiPostId="7797" />
+  <row Id="168" TagName="radio-astronomy" Count="25" ExcerptPostId="617" WikiPostId="616" />
+  <row Id="169" TagName="spectrometry" Count="2" />
+  <row Id="173" TagName="star-systems" Count="8" />
+  <row Id="176" TagName="constellations" Count="7" ExcerptPostId="621" WikiPostId="620" />
+  <row Id="178" TagName="impact" Count="12" ExcerptPostId="536" WikiPostId="535" />
+  <row Id="179" TagName="cosmological-inflation" Count="21" ExcerptPostId="6448" WikiPostId="6447" />
+  <row Id="181" TagName="magnetic-field" Count="17" ExcerptPostId="514" WikiPostId="513" />
+  <row Id="182" TagName="topographic-map" Count="1" ExcerptPostId="512" WikiPostId="511" />
+  <row Id="183" TagName="stellar-system" Count="11" ExcerptPostId="7913" WikiPostId="7912" />
+  <row Id="184" TagName="space-time" Count="40" ExcerptPostId="6353" WikiPostId="6352" />
+  <row Id="185" TagName="eccentric-orbit" Count="4" />
+  <row Id="187" TagName="newtonian-gravity" Count="6" />
+  <row Id="189" TagName="telescope-lens" Count="6" />
+  <row Id="190" TagName="deep-sky-observing" Count="9" />
+  <row Id="191" TagName="radiation" Count="9" ExcerptPostId="581" WikiPostId="580" />
+  <row Id="192" TagName="near-earth-object" Count="6" />
+  <row Id="194" TagName="software" Count="9" />
+  <row Id="195" TagName="velocity" Count="5" />
+  <row Id="196" TagName="speed" Count="24" ExcerptPostId="7769" WikiPostId="7768" />
+  <row Id="200" TagName="moon-phases" Count="6" />
+  <row Id="203" TagName="solar-wind" Count="6" />
+  <row Id="204" TagName="asteroid-belt" Count="6" />
+  <row Id="205" TagName="spectra" Count="8" ExcerptPostId="780" WikiPostId="779" />
+  <row Id="210" TagName="refractor-telescope" Count="3" />
+  <row Id="211" TagName="interstellar-medium" Count="7" ExcerptPostId="683" WikiPostId="682" />
+  <row Id="212" TagName="dark-energy" Count="14" ExcerptPostId="6355" WikiPostId="6354" />
+  <row Id="213" TagName="messier-catalog" Count="3" />
+  <row Id="214" TagName="star-cluster" Count="2" />
+  <row Id="218" TagName="turbulence" Count="1" ExcerptPostId="733" WikiPostId="732" />
+  <row Id="219" TagName="orbital-migration" Count="5" />
+  <row Id="220" TagName="astrophysics" Count="34" ExcerptPostId="7897" WikiPostId="7896" />
+  <row Id="221" TagName="neutrinos" Count="6" ExcerptPostId="6357" WikiPostId="6356" />
+  <row Id="222" TagName="tidal-forces" Count="12" />
+  <row Id="223" TagName="main-sequence" Count="5" ExcerptPostId="778" WikiPostId="777" />
+  <row Id="224" TagName="protostar" Count="7" ExcerptPostId="776" WikiPostId="775" />
+  <row Id="225" TagName="planet" Count="15" ExcerptPostId="7907" WikiPostId="7906" />
+  <row Id="227" TagName="telescope-care" Count="2" />
+  <row Id="228" TagName="galactic-dynamics" Count="14" />
+  <row Id="229" TagName="gravitational-lensing" Count="10" ExcerptPostId="6466" WikiPostId="6465" />
+  <row Id="233" TagName="nebula" Count="10" ExcerptPostId="1416" WikiPostId="1415" />
+  <row Id="234" TagName="cosmological-horizon" Count="9" />
+  <row Id="236" TagName="red-giant" Count="2" />
+  <row Id="238" TagName="stellar-astrophysics" Count="6" />
+  <row Id="239" TagName="initial-mass-function" Count="2" />
+  <row Id="240" TagName="accretion-discs" Count="8" />
+  <row Id="241" TagName="stellar-structure" Count="3" />
+  <row Id="243" TagName="plasma-physics" Count="3" />
+  <row Id="244" TagName="mass" Count="24" ExcerptPostId="7899" WikiPostId="7898" />
+  <row Id="246" TagName="fermi-paradox" Count="3" ExcerptPostId="910" WikiPostId="909" />
+  <row Id="251" TagName="geology" Count="8" ExcerptPostId="8727" WikiPostId="8726" />
+  <row Id="252" TagName="optics" Count="8" />
+  <row Id="253" TagName="planetary-formation" Count="9" ExcerptPostId="8810" WikiPostId="8809" />
+  <row Id="254" TagName="fundamental-astronomy" Count="32" ExcerptPostId="7895" WikiPostId="7894" />
+  <row Id="255" TagName="spectroscopy" Count="10" />
+  <row Id="256" TagName="stellar-atmospheres" Count="3" />
+  <row Id="257" TagName="radiative-transfer" Count="3" />
+  <row Id="258" TagName="n-body-simulations" Count="11" />
+  <row Id="259" TagName="star-formation" Count="18" ExcerptPostId="1199" WikiPostId="1198" />
+  <row Id="261" TagName="stellar-evolution" Count="16" ExcerptPostId="1043" WikiPostId="1042" />
+  <row Id="263" TagName="life" Count="24" ExcerptPostId="1614" WikiPostId="1613" />
+  <row Id="266" TagName="orbital-elements" Count="11" />
+  <row Id="267" TagName="bortle-scale" Count="1" ExcerptPostId="1164" WikiPostId="1163" />
+  <row Id="268" TagName="binoculars" Count="7" />
+  <row Id="270" TagName="high-energy-astrophysics" Count="4" />
+  <row Id="272" TagName="globular-clusters" Count="3" />
+  <row Id="274" TagName="data-analysis" Count="12" ExcerptPostId="1253" WikiPostId="1252" />
+  <row Id="275" TagName="local-group" Count="3" ExcerptPostId="1280" WikiPostId="1279" />
+  <row Id="276" TagName="galaxy-center" Count="8" />
+  <row Id="277" TagName="astrometry" Count="4" />
+  <row Id="279" TagName="artificial-satellite" Count="9" ExcerptPostId="1347" WikiPostId="1346" />
+  <row Id="280" TagName="units" Count="6" />
+  <row Id="282" TagName="special-relativity" Count="10" ExcerptPostId="6470" WikiPostId="6469" />
+  <row Id="283" TagName="antimatter" Count="5" ExcerptPostId="1403" WikiPostId="1402" />
+  <row Id="284" TagName="orrery" Count="1" ExcerptPostId="1401" WikiPostId="1400" />
+  <row Id="286" TagName="hydrogen" Count="5" ExcerptPostId="6361" WikiPostId="6360" />
+  <row Id="287" TagName="gamma-ray-bursts" Count="7" />
+  <row Id="289" TagName="background-radiation" Count="2" />
+  <row Id="291" TagName="interstellar-travel" Count="9" ExcerptPostId="8165" WikiPostId="8164" />
+  <row Id="292" TagName="space-probe" Count="6" />
+  <row Id="293" TagName="solar-storm" Count="3" />
+  <row Id="294" TagName="terminology" Count="9" />
+  <row Id="295" TagName="history" Count="12" />
+  <row Id="296" TagName="nasa" Count="3" ExcerptPostId="6365" WikiPostId="6364" />
+  <row Id="297" TagName="ufo" Count="2" />
+  <row Id="298" TagName="solar" Count="3" />
+  <row Id="299" TagName="astrophotography" Count="9" ExcerptPostId="8010" WikiPostId="8009" />
+  <row Id="300" TagName="algorithm" Count="3" />
+  <row Id="304" TagName="gravitational-waves" Count="3" ExcerptPostId="6255" WikiPostId="6254" />
+  <row Id="308" TagName="quantum-field-theory" Count="3" />
+  <row Id="309" TagName="holographic-principle" Count="2" />
+  <row Id="311" TagName="ds9" Count="2" />
+  <row Id="313" TagName="untagged" Count="5" />
+  <row Id="314" TagName="satellite" Count="7" ExcerptPostId="6450" WikiPostId="6449" />
+  <row Id="319" TagName="instruments" Count="2" />
+  <row Id="325" TagName="gas" Count="5" />
+  <row Id="326" TagName="observable-universe" Count="11" ExcerptPostId="6468" WikiPostId="6467" />
+  <row Id="329" TagName="collimation" Count="3" />
+  <row Id="330" TagName="albedo" Count="2" />
+  <row Id="331" TagName="magnitude" Count="2" />
+  <row Id="332" TagName="naked-eye" Count="6" ExcerptPostId="8814" WikiPostId="8813" />
+  <row Id="334" TagName="electron" Count="2" ExcerptPostId="6363" WikiPostId="6362" />
+  <row Id="335" TagName="pole" Count="3" />
+  <row Id="339" TagName="hydrostatic-equilibrium" Count="4" />
+  <row Id="343" TagName="moonlanding" Count="2" />
+  <row Id="344" TagName="date-time" Count="7" />
+  <row Id="345" TagName="kepler" Count="3" />
+  <row Id="346" TagName="exposure" Count="2" />
+  <row Id="347" TagName="quasars" Count="4" />
+  <row Id="349" TagName="brown-dwarf" Count="2" ExcerptPostId="6246" WikiPostId="6245" />
+  <row Id="350" TagName="galaxy-cluster" Count="9" ExcerptPostId="6260" WikiPostId="6259" />
+  <row Id="351" TagName="ultraviolet" Count="1" />
+  <row Id="352" TagName="metal" Count="2" />
+  <row Id="353" TagName="element" Count="2" />
+  <row Id="354" TagName="hypergiants" Count="1" ExcerptPostId="6372" WikiPostId="6371" />
+  <row Id="355" TagName="ccd" Count="1" />
+  <row Id="357" TagName="cosmic-ray" Count="3" />
+  <row Id="358" TagName="nucleosynthesis" Count="2" />
+  <row Id="359" TagName="space-geometry" Count="2" />
+  <row Id="360" TagName="impact-probability" Count="3" />
+  <row Id="361" TagName="johannes-kepler" Count="2" />
+  <row Id="362" TagName="epicycle" Count="1" />
+  <row Id="363" TagName="mean-earth" Count="1" />
+  <row Id="364" TagName="abiogenesis" Count="1" />
+  <row Id="365" TagName="greenhouse-gasses" Count="1" />
+  <row Id="366" TagName="carbon-cycle" Count="2" />
+  <row Id="367" TagName="maven" Count="1" />
+  <row Id="368" TagName="angular-diameter" Count="2" />
+  <row Id="369" TagName="elemental-abundances" Count="2" />
+  <row Id="370" TagName="helium" Count="2" />
+  <row Id="371" TagName="photons" Count="1" />
+  <row Id="372" TagName="lithium" Count="1" />
+  <row Id="373" TagName="escape-velocity" Count="1" />
+  <row Id="374" TagName="dwarf-galaxy" Count="1" />
+  <row Id="375" TagName="photosphere" Count="1" />
+  <row Id="376" TagName="positional-astronomy" Count="4" />
+  <row Id="377" TagName="tno" Count="4" ExcerptPostId="7890" WikiPostId="7889" />
+  <row Id="378" TagName="disk" Count="2" />
+  <row Id="379" TagName="reality-check" Count="1" ExcerptPostId="7932" WikiPostId="7931" />
+  <row Id="380" TagName="67p" Count="2" />
+  <row Id="381" TagName="obliquity" Count="3" />
+  <row Id="383" TagName="resource" Count="2" />
+  <row Id="384" TagName="lunar" Count="2" />
+  <row Id="385" TagName="phase" Count="1" />
+  <row Id="386" TagName="roche-limit" Count="2" />
+  <row Id="387" TagName="galileo-probe" Count="2" />
+  <row Id="388" TagName="new-horizons-probe" Count="1" />
+  <row Id="389" TagName="magnetometer" Count="1" />
+  <row Id="391" TagName="origin-of-life" Count="1" />
+  <row Id="392" TagName="space-travel" Count="1" />
+  <row Id="393" TagName="extinction" Count="1" />
+  <row Id="394" TagName="sample-return" Count="1" />
+  <row Id="395" TagName="solar-mass" Count="1" />
+  <row Id="397" TagName="multiverse" Count="2" />
+  <row Id="398" TagName="interstellar" Count="2" />
+  <row Id="399" TagName="vagabond" Count="1" />
+  <row Id="400" TagName="area" Count="1" />
+  <row Id="401" TagName="tides" Count="2" />
+  <row Id="402" TagName="education" Count="1" />
+  <row Id="403" TagName="jet" Count="1" />
+  <row Id="407" TagName="chemistry" Count="1" />
+  <row Id="408" TagName="differentiation" Count="1" />
+</tags>
