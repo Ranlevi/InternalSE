@@ -344,6 +344,7 @@ def main(is_debug_mode):
     
     for site_name in site_names:
 
+        print ("----> Now Parsing {} <-----".format(site_name))
         if is_debug_mode:
             #Allow the user to skip indexing of a datadump
             user_input = raw_input('Skip {}?'.format(site_name))
@@ -367,4 +368,4 @@ def main(is_debug_mode):
 
     
 if __name__ == "__main__":
-    main(True)
+    main(False)
