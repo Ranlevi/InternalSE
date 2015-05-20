@@ -1,6 +1,7 @@
 /* Website template by freewebsitetemplates.com */
 @font-face {
-	font-family: 'OpenSans';
+	/*font-family: 'OpenSans';*/
+	font-family: 'Verdana';
 	src: url('../static/fonts/OpenSans-Regular.eot');
 	src: local('☺'), url('../static/fonts/OpenSans-Regular.woff') format('woff'), url('../static/fonts/OpenSans-Regular.ttf') format('truetype'), url('../static/fonts/OpenSans-Regular.svg') format('svg');
 	font-weight: normal;
@@ -117,14 +118,16 @@ h1 {
 	margin: 0 0 30px;
 }
 h2 {
-	color: #2c2c2c;
+	/*color: #2c2c2c;*/
+	color: maroon;
 	font-size: 24px;
 	font-weight: normal;
 	line-height: 24px;
 	margin: 0 0 12px;
 }
 p {
-	color: #585858;
+	/*color: #585858;*/
+	color: black;
 	font-size: 16px;
 	line-height: 24px;
 	margin: 0 0 30px;
@@ -133,11 +136,12 @@ p a {
 	color: #585858;
 }
 #tagline h1 {
+	color: maroon;
 	margin-left: 20px;
 }
 #tagline > div {
 	float: left;
-	width: 1200px;
+	width: 800px;
 	margin: 0 20px;
 }
 #contents .features {
@@ -160,6 +164,11 @@ p a {
 	margin-right: 20px;
 	border: 1px solid #d5d5d5;
 	text-align: center;
+}
+
+#comments {
+    font-size: 13px;
+	margin-bottom: 6px;
 }
 .date p {
 	margin: 12px 0 0;
