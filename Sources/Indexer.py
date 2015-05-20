@@ -325,6 +325,16 @@ def main(is_debug_mode):
     """ Iterate over all the avaiable datadumps, index them all and create a metadata file.
         in debug_mode, allow the user to select which sites to index.
     """
+    if not os.path.exists('../Index'):
+        os.mkdir('../Index')
+    if not os.path.exists('../db'):
+        os.mkdir('../db')
+    if not os.path.exists('../temp_db'):
+        os.mkdir('../temp_db')
+    if not os.path.exists('../Metadata'):
+        os.mkdir('../Metadata')
+    if not os.path.exists('../Data'):
+        os.mkdir('../Data')
 
     path_to_datadumps = '../Datadumps/'
     site_names        = os.listdir(path_to_datadumps)
