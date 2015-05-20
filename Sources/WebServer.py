@@ -22,10 +22,11 @@ import os, sys
     Usage:
         -Unzip internal_s_e.zip to some directory.
         -Go to the /Sources directory
+        -type: python Indexer.py
+            The app will index all the datadumps in the /Datadumps folder.
         -type: python Webserver.py <optional: server's ip address> <optional: port number>
+            The webserver will start.
 
-        The application will first index all the datadumps avilable in the folder
-        '/Datadumps', then the web server will start.
         If no IP or Port number were given, the server will launch in 'development mode':
         localhost, 8080.
 
@@ -182,13 +183,10 @@ if __name__ == '__main__':
         port = sys.argv[2]
         print "Starting in production Mode: {}, {}.".format(ip, port)
     except IndexError:
-        print "Starting in development Mode: localhost, 8080."
+        print "Starting in development Mode: localhost, 8000."
         ip = 'localhost'
-        port = 8080
+        port = 8000
 
-    #The indexer scans the /Datadump directory and builds the database.
-    Indexer.main(True)
-    
     # The metadata_shelve holds information about available sites and their sizes,
     # and the tags for each site, and their sizes.
     # {site_name: (sites metadata, tags metadata)}

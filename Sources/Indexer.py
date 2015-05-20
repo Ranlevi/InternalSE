@@ -18,7 +18,6 @@ import cPickle
 """
 #####################################################################
 #####################################################################
-#@profile
 def parse_xmls(path_to_xmls, site_name):
     """ Create a file <site_name>.db under the folder /db/.
         The file is a shelve, containing full docs of the named site. Key is the question id. 
@@ -258,10 +257,11 @@ def create_schema(path_to_index_folder, db_name):
 
 #####################################################################
 #####################################################################
+#@profile
 def index_data(db_docs_ix_pointer, site_name):
     """ Do the search engine indexing of a data.
     """
-    doc_writer = db_docs_ix_pointer.writer(limitmb = 512, procs = 4)
+    doc_writer = db_docs_ix_pointer.writer(limitmb = 512, procs = 2)
 
     full_docs_shlv = shelve.open('../db/' + site_name +'.db', 'r', protocol = -1)
 
@@ -270,11 +270,6 @@ def index_data(db_docs_ix_pointer, site_name):
 
     print ("Now Indexing {}".format(site_name))
     for qid in full_docs_shlv.keys():
-
-        #Display a progress report to the user.
-        i+=1
-        if (i%100 == 0):
-            print ("Indexed doc {0} out of {1}".format(i,num_of_docs))
 
         #Extract all the texts from a document.
         tmp_text = ''
@@ -296,6 +291,13 @@ def index_data(db_docs_ix_pointer, site_name):
         doc_writer.add_document(doc_texts       = unicode(tmp_text),
                                     doc_tags    = fixed_tags,
                                     question_id = unicode(qid))
+
+        #Display a progress report to the user.
+        i+=1
+        if (i%100 == 0):
+            print ("Indexed doc {0} out of {1}".format(i,num_of_docs))
+    
+    db_docs_ix_pointer.close()
     full_docs_shlv.close()
     doc_writer.commit()
     return 
@@ -350,7 +352,7 @@ def main(is_debug_mode):
         full_docs_shlv = shelve.open('../db/' + site_name +'.db', 'r', protocol = -1)
         metadata_shelve[site_name] = (len(full_docs_shlv.keys()), tags_info)
         full_docs_shlv.close()
-
+    
     metadata_shelve.close()
 
     
