@@ -1,7 +1,7 @@
 import xml.etree.cElementTree as ET
 from whoosh.fields import Schema, TEXT, KEYWORD
 from whoosh.index import create_in
-import shelve, os
+import shelve, os, sys
 import cPickle
 
 """
@@ -47,7 +47,7 @@ def parse_xmls(path_to_xmls, site_name):
             i += 1
             if i%5000==0: 
                 shlv.sync() #Syncing the shelve clears the cache, and frees the memory.
-                print ("Processed {} users so far.".format(i))
+                print ("Processed {0} users so far.".format(i))
         root.clear()
 
     shlv.close()
@@ -76,7 +76,7 @@ def parse_xmls(path_to_xmls, site_name):
             i += 1
             if i%5000==0:
                 shlv.sync()
-                print ("Processed {} PostLinks so far.".format(i))
+                print ("Processed {0} PostLinks so far.".format(i))
         root.clear()
 
     shlv.close()
@@ -115,7 +115,7 @@ def parse_xmls(path_to_xmls, site_name):
             i += 1
             if i%10000==0: 
                 shlv.sync() 
-                print ("Processed {} Comments so far.".format(i))
+                print ("Processed {0} Comments so far.".format(i))
         root.clear()
 
     tmp_users_shlv.close()
@@ -169,7 +169,7 @@ def parse_xmls(path_to_xmls, site_name):
             if i%5000==0: 
                 tmp_questions_shlv.sync()
                 tmp_answers_shlv.sync() 
-                print ("Processed {} Posts so far.".format(i)) 
+                print ("Processed {0} Posts so far.".format(i)) 
  
         root.clear()
 
@@ -228,7 +228,7 @@ def parse_xmls(path_to_xmls, site_name):
         i += 1
         if i%1000==0:
             full_docs_shlv.sync()
-            print ("Processed {} Full Docs out of {}.".format(i, num_of_docs)) 
+            print ("Processed {0} Full Docs out of {1}.".format(i, num_of_docs)) 
  
 
     tmp_posts_shlv.close()
@@ -268,7 +268,7 @@ def index_data(db_docs_ix_pointer, site_name):
     num_of_docs = len(full_docs_shlv.keys())
     i = 0
 
-    print ("Now Indexing {}".format(site_name))
+    print ("Now Indexing {0}".format(site_name))
     for qid in full_docs_shlv.keys():
 
         #Extract all the texts from a document.
@@ -344,10 +344,10 @@ def main(is_debug_mode):
     
     for site_name in site_names:
 
-        print ("----> Now Parsing {} <-----".format(site_name))
+        print ("----> Now Parsing {0} <-----".format(site_name))
         if is_debug_mode:
             #Allow the user to skip indexing of a datadump
-            user_input = raw_input('Skip {}?'.format(site_name))
+            user_input = raw_input('Skip {0}?'.format(site_name))
             if user_input=='y':
                 continue
 
@@ -366,6 +366,18 @@ def main(is_debug_mode):
     
     metadata_shelve.close()
 
+    #remove temporary db files
+    import shutil
+    shutil.rmtree('../temp_db', ignore_errors=True)
+
     
 if __name__ == "__main__":
-    main(False)
+
+    debug_selector = sys.argv[1]
+
+    if debug_selector == "debug": 
+        debug_mode = True
+    else:
+        debug_mode = False
+
+    main(debug_mode)

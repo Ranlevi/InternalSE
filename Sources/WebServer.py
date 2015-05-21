@@ -34,16 +34,15 @@ import os, sys
         "http://192.1.2.3:80/"
 
     TODO:
-        decide on a standard naming scheme.
         add related links
         add selected answer
         add loging and better print out
-        add self test for deployment
-        remove temp dbs
         document in sphinx
         add py3 support
-        make the indexer a standalone app, for someone to build a front end. 
 """
+
+VERSION = 1.01
+
 ## Webpages ###
 ###############
 
@@ -176,12 +175,14 @@ def sort_by_name_of_size(list_to_be_sorted, sort_type):
 
 if __name__ == '__main__':
 
+    print ("Starting Internal Stack Exchange, Version {0}. Created by Ran Levi, 2015".format(VERSION))
+
     # Chech if the user provided an IP and Port number. If not,
     # use default values.
     try:
         ip = sys.argv[1]
         port = sys.argv[2]
-        print "Starting in production Mode: {}, {}.".format(ip, port)
+        print "Starting in production Mode: {0}, {1}.".format(ip, port)
     except IndexError:
         print "Starting in development Mode: localhost, 8000."
         ip = 'localhost'
