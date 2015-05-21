@@ -7,7 +7,9 @@ internet).
 Here's are a few screenshots:
 
 http://www.mediafire.com/view/l9rdrmi6i7zz398/ISE_SingleSite.png
+
 http://www.mediafire.com/view/io5veplpn1k2q99/ISE_SearchResults.png
+
 http://www.mediafire.com/view/nv1vzy31ib3mrdi/ISE_QuestionAndAnswers.png
 
 This application will enable organizations whose network is isolated from the web, to enjoy
