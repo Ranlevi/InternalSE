@@ -19,11 +19,17 @@ Programming to Movies to Math and much more.
 Questions, ideas and bugs - please contact me: ran@ranlevi.com
 
 Prequisites:
+-----------
+
   -Python 2.7
+  
   -A linux server with admin priviliges
 
   Dependencies:
+  -------------
+  
   -Bootle (http://bottlepy.org/docs/dev/index.html)
+  
   -Whoosh (https://pypi.python.org/pypi/Whoosh/)
 
   Basic Usage:
