@@ -19,7 +19,7 @@ Programming to Movies to Math and much more.
 Questions, ideas and bugs - please contact me: ran@ranlevi.com
 
 Prequisites:
-  -Python 2.7 
+  -Python 2.7
   -A linux server with admin priviliges
 
   Dependencies:
