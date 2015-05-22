@@ -1,5 +1,5 @@
 
-Internal Stack Exchange
+Intranet Stack Exchange
 -----------------------
 A tool to enable using the StackExchange datadumps (https://archive.org/details/stackexchange)
 in offline enviroments (e.g. internal network of a company, not connected to the 
