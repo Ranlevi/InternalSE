@@ -28,7 +28,7 @@ Prequisites:
   Dependencies:
   -------------
   
-  -Bootle (http://bottlepy.org/docs/dev/index.html)
+  -Bottle (http://bottlepy.org/docs/dev/index.html)
   
   -Whoosh (https://pypi.python.org/pypi/Whoosh/)
 
