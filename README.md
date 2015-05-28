@@ -22,6 +22,7 @@ Questions, ideas and bugs - please contact me: ran@ranlevi.com
 * A Linux server with admin privileges
 
 
+<<<<<<< HEAD
 ## Dependencies:
 
 * [Bottle](http://bottlepy.org/docs/dev/index.html)
@@ -39,6 +40,30 @@ Questions, ideas and bugs - please contact me: ran@ranlevi.com
     The app will index all the datadumps in the /Datadumps folder.
 
   * Run:
+=======
+  Dependencies:
+  -------------
+  
+  -Bottle (http://bottlepy.org/docs/dev/index.html)
+  
+  -Whoosh (https://pypi.python.org/pypi/Whoosh/)
+
+  Basic Usage:
+  -----------
+    -Clone (or Unzip) the git to some directory.
+    -Go to the /Sources directory
+    -type: python Indexer.py
+      The app will index all the datadumps in the /Datadumps folder.
+    -type: python Webserver.py <optional: server's ip address> <optional: port number>
+      The webserver will start.
+
+    If no IP or Port number were given, the server will launch in 'development mode':
+    localhost, 8080.
+
+    Open the web browswer, and go to the server's ip address. e.g.:
+    "http://192.1.2.3:80/"
+    You will get a browesable version of the Stack Exchange sites. 
+>>>>>>> 0eb04be1d3c047635634de756088d39c83de0b33
     
         python Webserver.py <optional: server's ip address> <optional: port number>
 
