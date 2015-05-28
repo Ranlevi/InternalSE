@@ -336,20 +336,46 @@ def main(is_debug_mode):
     if not os.path.exists('../Data'):
         os.mkdir('../Data')
 
+    #Clean old metadata files, if present.
+    files = os.listdir('../Metadata/')
+    for file in files:
+        os.remove('../Metadata/'+file)
+
     path_to_datadumps = '../Datadumps/'
     site_names        = os.listdir(path_to_datadumps)
+    num_of_sites      = len(site_names)
  
     #create a shelv to hold the metadata
     metadata_shelve = shelve.open('../Metadata/metadata.db', 'n', protocol = -1, writeback = False)
     
+    j=0
     for site_name in site_names:
 
-        print ("----> Now Parsing {0} <-----".format(site_name))
+        j += 1
+        print ("----> Now Parsing {0} ({1}/{2})<-----".format(site_name, j, num_of_sites))
         if is_debug_mode:
             #Allow the user to skip indexing of a datadump
             user_input = raw_input('Skip {0}?'.format(site_name))
             if user_input=='y':
+                #The user does not want to index - but if the site's data as already indexed
+                #we want it to appear in the metadata
+                if os.path.isfile('../db/'+site_name+'.db'):
+                    #get the tags information
+                    tags_info = get_tags_information(path_to_datadumps, site_name) #[(tag name, size), ..]
+
+                    #Store metadata as shelve dict: {db_name, (number of docs, list of tags)}
+                    full_docs_shlv = shelve.open('../db/' + site_name +'.db', 'r', protocol = -1)
+                    metadata_shelve[site_name] = (len(full_docs_shlv.keys()), tags_info)
+                    full_docs_shlv.close()
+
                 continue
+
+        #delete the temp_dbs
+        temp_files = os.listdir('../temp_db/')
+        for temp_file in temp_files:
+            os.remove('../temp_db/'+temp_file)
+        if os.path.isfile('../db/'+site_name+'.db'):
+            os.remove('../db/'+site_name+'.db')
 
         #Parse the xmls, and index the documents
         parse_xmls(path_to_datadumps + site_name + '/', site_name)
@@ -366,7 +392,6 @@ def main(is_debug_mode):
     
     metadata_shelve.close()
 
-    #remove temporary db files
     import shutil
     shutil.rmtree('../temp_db', ignore_errors=True)
 

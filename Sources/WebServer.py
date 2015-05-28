@@ -39,9 +39,14 @@ import os, sys
         add loging and better print out
         document in sphinx
         add py3 support
+
+
+    Changes Tracking:
+    Ver 1.02 (28.5.15): Fixed a bug that caused the site's docs to be counted wrongly.
+                        Added deletion of temporary db files after each indexing.
 """
 
-VERSION = 1.01
+VERSION = 1.02
 
 ## Webpages ###
 ###############
