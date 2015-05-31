@@ -15,11 +15,11 @@
                     </p>
                     <p>
                         <b>Score:</b> {{!doc_data['Score']}}
-                        <!-- <b>Related Links:</b>
-                                 %for link in doc_data['PostLinks']: 
-                                     {{!link}}
-                                 %end
-                         -->
+                        <b>Related Links:</b>
+                            %for link in doc_data['PostLinks']: 
+                                <a href="/display_full_doc?page_number={{page_number}}&is_tag={{is_tag}}&site_name={{site_name}}&search_term={{search_term}}&doc_id={{link['RelatedPostId']}}">Link</a>,
+                            %end
+                        
                     </p>
                     <p>
                         <b>Comments:</b>
@@ -43,11 +43,10 @@
                                 </p>
                                 <p>
                                     <b>Score:</b> {{!answer['Score']}}
-                                    <!-- <b>Related Links:</b>
+                                    <b>Related Links:</b>
                                              %for link in answer['PostLinks']: 
-                                                 <a href="">link </a>{{!link}}
+                                                <a href="/display_full_doc?page_number={{page_number}}&is_tag={{is_tag}}&site_name={{site_name}}&search_term={{search_term}}&doc_id={{link['RelatedPostId']}}">Link</a>,
                                              %end
-                                     -->
                                 </p>
                                 <p>
                                     <b>Comments:</b>

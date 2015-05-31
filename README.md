@@ -28,6 +28,10 @@ Questions, ideas and bugs - please contact me: ran@ranlevi.com
 * [Whoosh](https://pypi.python.org/pypi/Whoosh)
 
 
+## Dependencies:
+* Known issues: sometimes clicking on link takes a long time to respond. Clicking the same link again 
+                loads the wanted page. This is being investigated.
+
 ## Basic Usage:
 
   * Clone (or Unzip) the git to some directory.
