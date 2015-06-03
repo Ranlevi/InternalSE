@@ -365,7 +365,7 @@ def main(is_debug_mode):
 
                     #Store metadata as shelve dict: {db_name, (number of docs, list of tags)}
                     full_docs_shlv = shelve.open('../db/' + site_name +'.db', 'r', protocol = -1)
-                    metadata_shelve[site_name] = (len(full_docs_shlv.keys()), tags_info)
+                    metadata_shelve[site_name] = (str(len(full_docs_shlv.keys())), tags_info)
                     full_docs_shlv.close()
 
                 continue
@@ -387,7 +387,7 @@ def main(is_debug_mode):
 
         #Store metadata as shelve dict: {db_name, (number of docs, list of tags)}
         full_docs_shlv = shelve.open('../db/' + site_name +'.db', 'r', protocol = -1)
-        metadata_shelve[site_name] = (len(full_docs_shlv.keys()), tags_info)
+        metadata_shelve[site_name] = (str(len(full_docs_shlv.keys())), tags_info)
         full_docs_shlv.close()
     
     metadata_shelve.close()
@@ -398,7 +398,10 @@ def main(is_debug_mode):
     
 if __name__ == "__main__":
 
-    debug_selector = sys.argv[1]
+    try:
+        debug_selector = sys.argv[1]
+    except IndexError:
+	debug_selector = None
 
     if debug_selector == "debug": 
         debug_mode = True

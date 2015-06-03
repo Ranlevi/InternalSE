@@ -26,11 +26,11 @@ Questions, ideas and bugs - please contact me: ran@ranlevi.com
 
 * [Bottle](http://bottlepy.org/docs/dev/index.html)
 * [Whoosh](https://pypi.python.org/pypi/Whoosh)
+* [CherryPy](www.cherrypy.org)
 
 
-## Dependencies:
-* Known issues: sometimes clicking on link takes a long time to respond. Clicking the same link again 
-                loads the wanted page. This is being investigated.
+* Known issues:  None.
+               
 
 ## Basic Usage:
 
@@ -48,8 +48,8 @@ Questions, ideas and bugs - please contact me: ran@ranlevi.com
   -------------
   
   -Bottle (http://bottlepy.org/docs/dev/index.html)
-  
   -Whoosh (https://pypi.python.org/pypi/Whoosh/)
+  -CherryPy (www.cherrypy.org)
 
   Basic Usage:
   -----------

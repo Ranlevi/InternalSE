@@ -18,6 +18,7 @@ import os, sys
     Dependencies:
     -Bootle
     -Whoosh
+    -CherryPy
 
     Usage:
         -Unzip internal_s_e.zip to some directory.
@@ -44,9 +45,11 @@ import os, sys
     Changes Tracking:
     Ver 1.02 (28.5.15): Fixed a bug that caused the site's docs to be counted wrongly.
                         Added deletion of temporary db files after each indexing.
+    Ver 1.03 (3.6.15) : Fixed a bug in sorting of site's tag sizes. 
+                        Added the cherrypy server for improved performance
 """
 
-VERSION = 1.02
+VERSION = 1.03
 
 ## Webpages ###
 ###############
@@ -174,7 +177,7 @@ def sort_by_name_of_size(list_to_be_sorted, sort_type):
     if sort_type == 'name':
         sorted_list = sorted(list_to_be_sorted, key = lambda x: x[0], reverse = False)
     else: # 'size'
-        sorted_list = sorted(list_to_be_sorted, key = lambda x: x[1], reverse = True)
+        sorted_list = sorted(list_to_be_sorted, key = lambda x: int(x[1],10), reverse = True)
 
     return sorted_list
 
@@ -189,9 +192,9 @@ if __name__ == '__main__':
         port = sys.argv[2]
         print "Starting in production Mode: {0}, {1}.".format(ip, port)
     except IndexError:
-        print "Starting in development Mode: localhost, 8000."
+        print "Starting in development Mode: localhost, 8080."
         ip = 'localhost'
-        port = 8000
+        port = 8080
 
     # The metadata_shelve holds information about available sites and their sizes,
     # and the tags for each site, and their sizes.
@@ -212,4 +215,4 @@ if __name__ == '__main__':
     index_pointers = SearchEngine.get_all_index_pointers('../Index', site_names)
     
     #Run the webserver
-    run(host = ip, port = port, debug = True)
+    run(host = ip, port = port, debug = True, server = "cherrypy")
