@@ -28,9 +28,7 @@ Questions, ideas and bugs - please contact me: ran@ranlevi.com
 * [Whoosh](https://pypi.python.org/pypi/Whoosh)
 * [CherryPy](www.cherrypy.org)
 
-
 * Known issues:  None.
-               
 
 ## Basic Usage:
 
@@ -44,22 +42,7 @@ Questions, ideas and bugs - please contact me: ran@ranlevi.com
     
     The app will index all the datadumps in the /Datadumps folder.
 
-  Run:
-=======
-  Dependencies:
-  -------------
-  
-  -Bottle (http://bottlepy.org/docs/dev/index.html)
-  -Whoosh (https://pypi.python.org/pypi/Whoosh/)
-  -CherryPy (www.cherrypy.org)
-
-  Basic Usage:
-  -----------
-    -Clone (or Unzip) the git to some directory.
-    -Go to the /Sources directory
-      -type: python Indexer.py
-        The app will index all the datadumps in the /Datadumps folder.
-      -type: python Webserver.py <optional: server's ip address> <optional: port number>
+  * type: python Webserver.py <optional: server's ip address> <optional: port number>
         The webserver will start.
 
     If no IP or Port number were given, the server will launch in 'development mode':
@@ -79,21 +62,13 @@ Questions, ideas and bugs - please contact me: ran@ranlevi.com
    For example:
   
      /Datadumps
-     /Beer
-     /Astronomy
-     /Ardunio
-     /Movies
-     Posts.xml
-     Comments.xml
-     ...
-     
-
-  Go to the /Sources directory, and type:
-        
-        python Indexer.py
-  
-  The application will re-index the data-dumps and add the new database. 
-  Note that for large databases, the indexing process can be very lengthy; hours, even.
+        /Beer
+        /Astronomy
+        /Ardunio
+        /Movies
+            Posts.xml
+            Comments.xml
+            ...
 
   2. It is possible to index only selected database(s), to save time. in /Sources, type: python Indexer.py debug
 
