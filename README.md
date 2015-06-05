@@ -35,6 +35,8 @@ Questions, ideas and bugs - please contact me: ran@ranlevi.com
 ## Basic Usage:
 
   * Clone (or Unzip) the git to some directory.
+  * install the required libraries: either run "pip install -r requirements.txt" for 
+    automatic install, or install the libraries (Whoosh, bootle, etc.) manually.
   * Go to the /Sources directory
   * Run:
 
