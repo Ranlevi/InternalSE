@@ -42,8 +42,11 @@ Questions, ideas and bugs - please contact me: ran@ranlevi.com
     
     The app will index all the datadumps in the /Datadumps folder.
 
-  * type: python Webserver.py <optional: server's ip address> <optional: port number>
-        The webserver will start.
+  * Run: 
+
+        python Webserver.py <optional: server's ip address> <optional: port number>
+
+    The webserver will start.
 
     If no IP or Port number were given, the server will launch in 'development mode':
     localhost, 8080.
